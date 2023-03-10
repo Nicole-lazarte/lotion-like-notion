@@ -63,8 +63,8 @@ function lotionLayout() {
   return (
     <>
       <div className="Headbar">
-        <div id="title_bar">
-          <button id="hide_sidebar" onClick={hideSideBar}>
+        <div id="title_headbar">
+          <button id="hide_bar" onClick={hideSideBar}>
             &#9776;{" "}
           </button>
 
@@ -72,7 +72,7 @@ function lotionLayout() {
             <h1> Lotion </h1>
             <p id="subheading">
               {" "}
-              Notion's budget-friendly and slightly greasier cousin!{" "}
+              It's Like Notion But Worse{" "}
             </p>
           </div>
 
@@ -83,21 +83,21 @@ function lotionLayout() {
       </div>
       <div id="container">
         <div id="sidebar">
-          <div className="app-sidebar-header">
+          <div className="app-header">
             <h1>Notes</h1>
             <button onClick={onAddNote}>+</button>
           </div>
-          <div className="app-sidebar-notes">
+          <div className="app-notes">
             {sortedNotes.map(({ id, title, body, lastModified }, i) => (
               <div
-                className={`app-sidebar-note ${id === activeNote && "active"}`}
+                className={`app-note ${id === activeNote && "active"}`}
                 key={id}
                 onClick={() => {
                   navigate(`/preview/${id}`, { replace: true });
                   setActiveNote(id);
                 }}
               >
-                <div className="sidebar-note-title">
+                <div className="note-title">
                   <strong>{title && title.substr(0, 50)}</strong>
                 </div>
 

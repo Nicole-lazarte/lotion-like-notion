@@ -48,11 +48,11 @@ function preview() {
                 </h1>
                 <div id="mainbar-buttons">
                   <Link key={note.id} to={"/editing/" + note.id} id="editing-link">
-                    <button id="save_button">Edit</button>
+                    <button id="s_button">Edit</button>
                   </Link>
                   <Link>
                     <button
-                      id="delete_button"
+                      id="del_button"
                       onClick={(e) => onDeleteNote(note.id)}
                     >
                       delete

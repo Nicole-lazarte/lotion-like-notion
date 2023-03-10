@@ -16,7 +16,6 @@
   --black: #ffffff;
   transition: all 0.5s ease;
 }
-/* GLOBAL STYLES */
 
 body,
 .App {
@@ -24,8 +23,7 @@ body,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow: hidden;
   font-size: 16px;
-  background-color: #eb67d9;
-  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+  background-color: #90EE90;
 }
 
 button {
@@ -36,24 +34,24 @@ button {
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
-  color: #08c;
+  color: rgb(249, 81, 246);
   transition: background-color 0.3s ease-in-out;
 }
 button:hover {
-  color: #04c;
+  color: rgb(70, 3, 133);
   background-color: #dde3ff;
   border-radius: 10px;
 }
 
 /* HEADBAR STYLES */
-#title_bar {
+#title_headbar {
   display: flex;
   background-color: var(--white);
   color: var(--black);
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  border-bottom: 3px solid #5f5f5f;
+  border-bottom: 3px solid #b2b2b2;
 }
 
 #center_text {
@@ -62,7 +60,7 @@ button:hover {
 #subheading {
   color: #5f5f5f;
 }
-#hide_sidebar,
+#hide_bar,
 #dark_mode {
   font-size: 50px;
   padding: 20px;
@@ -73,7 +71,7 @@ button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-#hide_sidebar:hover,
+#hide_bar:hover,
 #dark_mode:hover {
   background-color: #dde3ff;
   transition: background-color 0.3s ease-in-out;
@@ -85,7 +83,7 @@ button:hover {
   height: 100vh;
 }
 
-/* SIDEBAR STYLES */
+
 
 #sidebar {
   display: flex;
@@ -93,59 +91,59 @@ button:hover {
   color: var(--black);
   flex-direction: column;
   flex: 1;
-  border-right: 2px solid #5f5f5f;
+  border-right: 2px solid #b2b2b2;
 }
 #sidebar.hide {
   display: none;
 }
 
-.app-sidebar-header {
+.app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #5f5f5f;
+  border-bottom: 2px solid #b2b2b2;
 }
-.app-sidebar-header h1 {
+.app-header h1 {
   margin: 0;
   padding: 20px;
 }
-.app-sidebar-header button {
+.app-header button {
   font-size: 50px;
   color: #08c;
   padding: 20px;
   height: 100%;
 }
 
-.app-sidebar-notes {
-  border-right: 2px solid #5f5f5f;
+.app-notes {
+  border-right: 2px solid #b2b2b2;
   overflow-y: scroll;
 }
-.app-sidebar-note {
+.app-note {
   padding: 25px;
   cursor: pointer;
 }
-.sidebar-note-title {
+.note-title {
   display: flex;
   justify-content: space-between;
 }
-.app-sidebar-note button {
+.app-note button {
   color: crimson;
 }
-.app-sidebar-note p {
+.app-note p {
   margin: 10px 0;
 }
-.app-sidebar-note small {
+.app-note small {
   display: flex;
   flex-direction: row;
   flex: 1;
   color: #999;
 }
 
-.app-sidebar-note:hover {
+.app-note:hover {
   background: #ddd;
 }
-.app-sidebar-note.active,
-.app-sidebar-note.active small {
+.app-note.active,
+.app-note.active small {
   background: #08c;
   border-radius: 10px;
   color: white;
@@ -233,13 +231,13 @@ button:hover {
   font-size: 25px;
   margin-left: 10px;
 }
-#save_button {
+#s_button {
   color: var(--black);
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
-#save_button:hover {
+#s_button:hover {
   background-color: rgb(70, 204, 146);
   border-radius: 10px;
 }
@@ -252,12 +250,12 @@ button:hover {
   height: auto;
 }
 
-#delete_button {
+#del_button {
   color: var(--black);
   padding-left: 20px;
   padding-right: 20px;
 }
-#delete_button:hover {
+#del_button:hover {
   background-color: #eb6767;
   border-radius: 10px;
 }
@@ -293,5 +291,5 @@ button:hover {
 }
 .ql-toolbar {
   border: none !important;
-  border-bottom: 1px solid #5f5f5f !important;
+  border-bottom: 1px solid #b2b2b2 !important;
 }

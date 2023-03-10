@@ -63,12 +63,12 @@ function editing() {
           </h1>
           <div id="mainbar-buttons">
             <button
-              id="save_button"
+              id="s_button"
               onClick={() => onSaveNote(title, body, when)}
             >
               save
             </button>
-            <button id="delete_button" onClick={(e) => onDeleteNote(note.id)}>
+            <button id="del_button" onClick={(e) => onDeleteNote(note.id)}>
               delete
             </button>
           </div>
